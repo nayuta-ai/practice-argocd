@@ -6,7 +6,7 @@ commonLabels:
   app: nayuta-dev
 replicas:
   - name: nayuta-dev-nginx
-    count: 5
+    count: 7
 images:
   - name: nginx
     newName: nginx
