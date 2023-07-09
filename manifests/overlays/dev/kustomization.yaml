@@ -1,0 +1,15 @@
+resources:
+  - ../../base
+namespace: nayuta-dev
+namePrefix: nayuta-dev-
+commonLabels:
+  app: nayuta-dev
+replicas:
+  - name: nayuta-dev-nginx
+    count: 5
+images:
+  - name: nginx
+    newName: nginx
+    newTag: 1.21-alpine
+patchesStrategicMerge:
+  - deployment.yaml
